@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+         http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+         
+         <servlet>
+		<servlet-name>addproperty</servlet-name>
+		<servlet-class>com.property.propertyinsert</servlet-class>
+	</servlet>
+      <servlet-mapping>
+		<servlet-name>addproperty</servlet-name>
+		<url-pattern>/add</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>viewproperty</servlet-name>
+		<servlet-class>com.property.propertyview</servlet-class>
+	</servlet>
+      <servlet-mapping>
+		<servlet-name>viewproperty</servlet-name>
+		<url-pattern>/view</url-pattern>
+	</servlet-mapping>   
+	
+	<servlet>
+		<servlet-name>updateproperty</servlet-name>
+		<servlet-class>com.property.updateproperty</servlet-class>
+	</servlet>
+      <servlet-mapping>
+		<servlet-name>updateproperty</servlet-name>
+		<url-pattern>/update</url-pattern>
+	</servlet-mapping>   
+         
+     <servlet>
+		<servlet-name>deleteproperty</servlet-name>
+		<servlet-class>com.property.deleteproperty</servlet-class>
+	</servlet>
+      <servlet-mapping>
+		<servlet-name>deleteproperty</servlet-name>
+		<url-pattern>/delete</url-pattern>
+	</servlet-mapping> 
+         
+         
+ </web-app>
